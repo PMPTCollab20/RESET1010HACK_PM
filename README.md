@@ -12,6 +12,8 @@ python classifier/main.py
 
 located in folder [results-classifier][run-no]
 
+Augmented training on the pre-trained model [RESNET18](https://pytorch.org/hub/pytorch_vision_resnet/)
+
 [Based on beta version tutorial of Pytorch](https://pytorch.org/tutorials/intermediate/quantized_transfer_learning_tutorial.html)
 
 ### Setup Pytorch Framework with NVIDIA GPU
