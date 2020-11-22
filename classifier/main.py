@@ -206,7 +206,7 @@ This function also
 """
 
 
-def train_model(model, criterion, optimizer, scheduler, num_epochs=25, device='cuda'):
+def train_model(model, criterion, optimizer, scheduler, num_epochs=50, device='cpu'):
     """
     Support function for model training.
 
@@ -420,7 +420,7 @@ only run on the CPU, you cannot run the training on GPU.
 """
 
 new_model = train_model(new_model, criterion, optimizer_ft, exp_lr_scheduler,
-                        num_epochs=150, device='cuda')
+                        num_epochs=50, device='cpu')
 
 visualize_model(new_model)
 plt.tight_layout()
