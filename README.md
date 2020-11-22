@@ -1,6 +1,6 @@
 # RESET1010HACK_PM
 
-## [Android app] for Generic Object detection
+## [Android app] for Generic Object detection using PyTorch Mobile model
 
 ## [Insect Classifier] Python PyTorch Trainer for BEE vs ANT
 

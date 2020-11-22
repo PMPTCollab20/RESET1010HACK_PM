@@ -66,20 +66,6 @@ import time
 
 plt.ion()
 
-"""### Installing the Nightly Build
-
-Because you will be using the experimental parts of the PyTorch, it is
-recommended to install the latest version of ``torch`` and
-``torchvision``. You can find the most recent instructions on local
-installation [here](https://pytorch.org/get-started/locally/).
-For example, to install without GPU support:
-
-```shell
-   pip install numpy
-   pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
-   # For CUDA support use https://download.pytorch.org/whl/nightly/cu101/torch_nightly.html
-```
-"""
 
 # !yes y | pip uninstall torch torchvision
 # !yes y | pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cu101/torch_nightly.html
