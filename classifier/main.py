@@ -107,24 +107,24 @@ reasonably well.
 
 DATA_URL = 'https://download.pytorch.org/tutorial/hymenoptera_data.zip'
 DATA_PATH = os.path.join('.', 'data')
-FILE_NAME = os.path.join(DATA_PATH, 'hymenoptera_data.zip')
+# FILE_NAME = os.path.join(DATA_PATH, 'hymenoptera_data.zip')
 
-if not os.path.isfile(FILE_NAME):
-    print("Downloading the data...")
-    os.makedirs('data', exist_ok=True)
-    with requests.get(DATA_URL) as req:
-        with open(FILE_NAME, 'wb') as f:
-            f.write(req.content)
-    if 200 <= req.status_code < 300:
-        print("Download complete!")
-    else:
-        print("Download failed!")
-else:
-    print(FILE_NAME, "already exists, skipping download...")
+# if not os.path.isfile(FILE_NAME):
+#     print("Downloading the data...")
+#     os.makedirs('data', exist_ok=True)
+#     with requests.get(DATA_URL) as req:
+#         with open(FILE_NAME, 'wb') as f:
+#             f.write(req.content)
+#     if 200 <= req.status_code < 300:
+#         print("Download complete!")
+#     else:
+#         print("Download failed!")
+# else:
+#     print(FILE_NAME, "already exists, skipping download...")
 
-with zipfile.ZipFile(FILE_NAME, 'r') as zip_ref:
-    print("Unzipping...")
-    zip_ref.extractall('data')
+# with zipfile.ZipFile(FILE_NAME, 'r') as zip_ref:
+#     print("Unzipping...")
+#     zip_ref.extractall('data')
 
 DATA_PATH = os.path.join(DATA_PATH, 'hymenoptera_data')
 
@@ -420,7 +420,7 @@ only run on the CPU, you cannot run the training on GPU.
 """
 
 new_model = train_model(new_model, criterion, optimizer_ft, exp_lr_scheduler,
-                        num_epochs=25, device='cpu')
+                        num_epochs=150, device='cuda')
 
 visualize_model(new_model)
 plt.tight_layout()
