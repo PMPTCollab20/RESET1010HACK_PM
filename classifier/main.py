@@ -516,14 +516,13 @@ exp_lr_scheduler = optim.lr_scheduler.StepLR(
     optimizer_ft, step_size=5, gamma=0.3)
 
 model_ft_tuned = train_model(model_ft, criterion, optimizer_ft, exp_lr_scheduler,
-                             num_epochs=25, device=device)
+                             num_epochs=50, device=device)
 
 """Step 5. Convert to quantized model
 
 """
 
 model_ft_tuned.cpu()
-
 model_quantized_and_trained = convert(model_ft_tuned, inplace=False)
 
 """Lets see how the quantized model performs on a few images
