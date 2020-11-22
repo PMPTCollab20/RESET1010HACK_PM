@@ -4,7 +4,9 @@
 
 ## [Insect Classifier] Python PyTorch Trainer for BEE vs ANT
 
-Result in [results-classifier][run-no]
+![Result](results-classifier/50epoch/latest/Figure_2.png)
+
+located in folder [results-classifier][run-no]
 
 ### Setup Pytorch Framework with NVIDIA GPU
 
