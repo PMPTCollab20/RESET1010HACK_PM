@@ -206,7 +206,7 @@ This function also
 """
 
 
-def train_model(model, criterion, optimizer, scheduler, num_epochs=25, device='cpu'):
+def train_model(model, criterion, optimizer, scheduler, num_epochs=25, device='cuda'):
     """
     Support function for model training.
 
