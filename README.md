@@ -8,5 +8,11 @@ Result in [results-classifier][run-no]
 
 ### Setup Pytorch Framework with NVIDIA GPU
 
+Recommend using Anaconda Environment with Python 3.7
+
 pip install numpy
 pip install --pre torch torchvision -f https://download.pytorch.org/whl/nightly/cu101/torch_nightly.html
+
+### Run Insect CLASSIFIER
+
+python classifier/main.py
